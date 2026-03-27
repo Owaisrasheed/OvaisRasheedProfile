@@ -1211,8 +1211,8 @@
           </div>
         </div>
         <div class="platforms reveal">
-          <a href="https://linkedin.com/in/owaisrasheed" class="platform-badge" target="_blank">🔗 LinkedIn</a>
-          <a href="#" class="platform-badge">🟢 Fiverr</a>
+          <a href="https://www.linkedin.com/in/ovaisrasheed-ai/" class="platform-badge" target="_blank">🔗 LinkedIn</a>
+          <a href="https://www.fiverr.com/ovais_rasheed" class="platform-badge">🟢 Fiverr</a>
           <a href="#" class="platform-badge">🔵 Upwork</a>
         </div>
       </div>
@@ -1244,15 +1244,80 @@
   <p style="font-size:12px;color:var(--muted)">owaisrasheed06@gmail.com</p>
 </footer>
 
-<!-- DOWNLOAD BUTTON -->
-<div class="download-bar">
-  <button class="download-btn" onclick="downloadProfile()">
-    ⬇ Download Profile
-  </button>
-</div>
+//<!-- DOWNLOAD BUTTON -->
+//<div class="download-bar">
+  //<button class="download-btn" onclick="downloadProfile()">
+    //⬇ Download Profile
+ // </button>
+//</div>
 
 <script>
-// SCROLL REVEAL
+<!-- WhatsApp Button -->
+<a href="https://wa.me/923333219002?text=Hello%20I%20am%20interested%20in%20your%20services" 
+   class="whatsapp-btn" target="_blank">
+   <span class="icon">💬</span>
+   <span class="text">Chat with us</span>
+</a>
+
+<style>
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+    z-index: 999;
+}
+
+.whatsapp-btn .icon {
+    font-size: 20px;
+}
+
+/* Hover Effect */
+.whatsapp-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Optional: Hide text on small screens */
+@media (max-width: 480px) {
+    .whatsapp-btn .text {
+        display: none;
+    }
+    .whatsapp-btn {
+        padding: 15px;
+        border-radius: 50%;
+    }
+}
+</style>
+  
+  
+  
+  // SCROLL REVEAL
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
